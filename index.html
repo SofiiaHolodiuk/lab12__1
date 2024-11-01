@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Вибір мови</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				background: linear-gradient(135deg, #74ebd5, #9face6);
+				color: #333;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				margin: 0;
+			}
+			.container {
+				background-color: rgba(255, 255, 255, 0.8);
+				border-radius: 10px;
+				box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+				padding: 20px;
+				width: 400px;
+				text-align: center;
+			}
+			h1 {
+				color: #333;
+				font-size: 24px;
+			}
+			p {
+				font-size: 18px;
+				color: #555;
+			}
+			strong {
+				color: #0073e6;
+			}
+		</style>
+	</head>	
+	<body>
+		<div class="container">
+			<h1>Вибір мови</h1>
+			<script> 
+				"use strict";
+				document.write(
+					"<p>Використання оператора <strong>IF</strong> для вибору мови</p>"
+				);
+				
+				let lang = prompt("Введіть код мови (ua, en, pl, de):"); // Запитуємо користувача на код мови
+				
+				if (lang === "ua") {
+					document.write("<p>Ваша мова: українська</p>");
+				} else if (lang === "en") {
+					document.write("<p>Ваша мова: англійська</p>");
+				} else if (lang === "pl") {
+					document.write("<p>Ваша мова: польська</p>");
+				} else if (lang === "de") {
+					document.write("<p>Ваша мова: німецька</p>");
+				} else {
+					document.write("<p>Мову невизначено</p>");
+				}
+			</script>
+		</div>
+	</body>
+</html>
